@@ -58,7 +58,7 @@ volatility, skewness and kurtosis.
 python3 -m venv .venv && source .venv/bin/activate
 pip install requests pandas numpy scipy
 
-python3 "5 most Volatile stocks"
+python3 top_volatile_stocks.py
 ```
 
 Must be run during or after NSE market hours for `lastPrice` to be meaningful.
@@ -69,8 +69,7 @@ outside India, or from a datacentre IP, expect the block page that the
 ## Repo structure
 
 ```
-5 most Volatile stocks    NSE session handshake -> NIFTY 50 quote fetch -> volatility/skew/kurtosis ranking
-                          (Python; no .py extension)
+top_volatile_stocks.py    NSE session handshake -> NIFTY 50 quote fetch -> volatility/skew/kurtosis ranking
 ```
 
 ## Limitations
